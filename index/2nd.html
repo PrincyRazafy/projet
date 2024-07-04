@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd</title>
+    <link rel="stylesheet" href="../css/2nbd.css">
+    <SCRIPT LANGUAGE=Javascript SRC="../js/2nd.js"> </SCRIPT>
+
+</head>
+
+<body>
+    <!-- <video autoplay loop muted plays-inline class="video">
+        <source src="Nature_Video_30_Seconds_WhatsApp_Status_Video_Nature_Background_Videos(720p).mp4" type="video/mp4">
+    </video> -->
+    <div>
+        <h3>Resolution d'équation du second degrée</h3>
+        <nav>
+            <ul>
+                <li class="nd"><a href="accueil.html" class="nd">Second dégré</a></li>
+                <li class="pp"><a href="TP3.html" class="pp">Panneau Publicitaire</a></li>
+                <li class="ct"><a href="TP2.html" class="ct">Circuit</a></li>
+            </ul>
+        </nav>
+    </div>
+    <fieldset class="contenair">
+        <div class="corps">
+            <div class="traitement">
+                <label for="a">a :</label>
+                <input type="number" id="a" required><br>
+                <label for="b">b :</label>
+                <input type="number" id="b" required><br>
+                <label for="c">c :</label>
+                <input type="number" id="c" required><br>
+                <div class="calc">
+                    <button onclick="clearDisplay()">Clear</button>
+                    <button onclick="calcul()">Resoudre</button>
+                </div>
+            </div>
+            <div class="resultat">
+                <div class="suj">
+                    <h1 class="equation" id="equation">ax<sup>2</sup>+bx+c=0</h1>
+                </div>
+                <div class="sol">
+                    <h1 id="resultat"></h1>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</body>
+
+</html>

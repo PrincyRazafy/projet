@@ -1,0 +1,202 @@
+body{
+    background-image: url(../sunset-sea-cliff-france-3k.jpg);
+    margin: 0;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#forme{
+    color: red;
+}
+
+fieldset{
+    margin: 50px;
+    border-radius: 4cap;
+    margin-top: 1px;
+}
+
+
+label{
+        color: blue;
+}
+input{
+    margin-top: 75px;
+    padding: 5px;
+    border-radius: 25cap;
+}
+.calc{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+button{
+    font-size: 1.8rem;
+    border: 3px solid green;
+    transition: .5s;
+    border-radius: 25cap;
+}
+button:hover{
+    border: 5px double red;
+    box-shadow: 5px 15px 15px rgb(255, 0, 170);
+    transform: translateY(-5px);
+}
+
+/* .video{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+} */
+
+#resultat{
+    color: yellow;
+    margin-left: 20px;  
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    width: 84%;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    font-size: 2rem;
+    animation: color 10s infinite ease-in-out;
+}
+
+@keyframes color {
+    0%
+    {
+         color: black;
+    }
+    20%
+    {
+        color: blue;
+    }
+    40%
+    {
+        color: rgb(21, 255, 0);
+    }
+    60%
+    {
+       color: yellow;
+    }
+    80%
+    {
+       color: red;
+    }
+    100%
+    {
+       color: orange;
+    }
+
+}
+/* animation6 */
+@keyframes test {
+    0% {transform: translateX (-100%);}
+    100% {transform: translateX (0);}
+    
+}
+
+@keyframes test{
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+home-content  .contenair ::before{
+    position: absolute;
+}
+
+.contenair{
+    animation: test 1s ease-in-out;
+}
+
+home-content  .test1 ::before{
+    position: absolute;
+}
+
+.test1{
+    animation: test 3s ease-in-out;
+}
+
+.corps
+{
+    margin-left: 50px;
+    height: 500px;
+    width: 90%;
+    display:flex;
+}
+.traitement
+{
+    height: 90%;
+    width: 70%;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(85, 173, 214, 0.75);
+}
+.resultat
+{
+    height: 90%;
+    width: 90%;
+    margin-top: 25px;
+    margin-left: 250px;
+    margin-bottom: 0;
+    flex-direction: column;
+}
+.suj
+{
+    height: 25%;
+    width: 80%;
+    padding: 5px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(85, 173, 214, 0.75);
+}
+
+
+.sol
+{
+    height: 60%;
+    width: 80%;
+    padding: 5px;
+    margin-top: 50px;
+    border-radius: 20px;
+    background-color: rgba(85, 173, 214, 0.75);
+}
+
+h3{
+    position: absolute;
+    font-size: 1.5rem;
+    margin-left: 80px;
+    margin-top: 85px;
+}
+

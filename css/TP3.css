@@ -1,0 +1,222 @@
+/* *****style du corps de TP3***** */
+body{
+    /* background-color:rgb(160, 160, 197); */
+    justify-content: center; 
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    /* height: 150vh; */
+    display: flex;
+    /* overflow: hidden; */
+    animation: backanim 20s ease-in-out infinite;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+@keyframes backanim {
+    0%{
+        background-image: url(../images/c6.jpg);
+    }
+    25%{
+        background-image: url(../images/c7.jpg);
+    }
+    50%{
+        background-image: url(../images/c8.jpg);
+    }
+    75%{
+        background-image: url(../images/c9.jpg);
+    }
+    100%{
+        background-image: url(../images/c10.jpg);
+    }
+}
+
+/* *******style de l'écriture******* */
+.title{
+    position: absolute;
+    margin-top: 560px;
+    font-size: 250%;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    /* animation: anim 10s ease-in-out infinite; */
+    background-color:rgb(239, 233, 233);
+    animation: title 50s linear infinite;
+}
+.title{
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    /* position: relative; */
+}
+.title p{
+    display: inline-block;
+    padding-left: 100%;
+    /* animation: title 1000s linear infinite; */
+}
+
+@keyframes title{
+    0%{
+        transform: translateX(100%);
+    }
+    50%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}
+
+/* *****style d'animation de l'image****** */
+.slider{ 
+    width: 800px;
+    height: 600px;
+    border-radius: 5%;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 200px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{  
+    width: 20%;
+    transition: 2s; 
+}
+ .slide img{ 
+    width: 750px;
+    height: 550px;
+    margin-top: 100px;
+}
+/* ****navigation manual par le bouton***** */
+.navigation-manual{
+position: absolute;
+width: 900px;
+margin-top: 600px;
+display: flex;
+justify-content: center;
+margin-left: -50px;
+}
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: white;
+    border-color: black;
+}
+#radio1:checked~.first{
+    margin-left: 0;
+}
+#radio2:checked~.first{
+    margin-left: -20%;
+}
+#radio3:checked~.first{
+    margin-left: -40%;
+}
+#radio4:checked~.first{
+    margin-left: -60%;
+}
+#radio5:checked~.first{
+    margin-left: -80%;
+}
+/* ****style navigation automatique**** */
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 900px;
+    justify-content: center;
+    margin-top: 600px;
+    margin-left: -50px;
+}
+.navigation-auto div{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+    background-color: black;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked.navigation-auto.auto-btn1{
+    background: blue;
+}
+#radio2:checked.navigation-auto.auto-btn2{
+    background: blue;
+}
+#radio3:checked.navigation-auto.auto-btn3{
+    background: blue;
+}
+#radio4:checked.navigation-auto.auto-btn4{
+    background: blue;
+}
+#radio5:checked.navigation-auto.auto-btn5{
+    background: blue;
+}
+nav{
+    /* width: 84%; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-left: -100px;
+    margin-top: -10px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    font-size: 2rem;
+    animation: color 10s infinite ease-in-out;
+}
+@keyframes color {
+    0%
+    {
+         color: black;
+    }
+    30%
+    {
+        color:gray;
+    }
+    60%
+    {
+        color: rgb(238, 241, 247);
+    }
+    100%
+    {
+       color: whitesmoke;
+    }
+}
+
+.n{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: .5cap;
+    padding: 10px;
+}
+
+.n:hover{
+    background-color: black;
+    color: white;
+}

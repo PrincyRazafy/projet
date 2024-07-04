@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circuits</title>
+    <link rel="stylesheet" href="../css/TP2.CSS">
+</head>
+<body>
+    <div>
+        <a href="accueil.html"><button class="n">Retour</button></a>
+    </div>
+     <img src="../images/Sans titre.png" alt="schema-du_circuit" id="img">
+     <h3 class="h3">Calcul des intensités et des tensions de ces circuits.</div></h1>
+    <div class="body"><fieldset><legend>veuiller saisir </legend>
+    <ul>
+     <li><label for="E">La valeur de la Tension 'E'</label>&emsp;:&nbsp;
+     <input type="number" name="Tension" id="E" placeholder="en Volt(V)"><br><br></li>
+     <li><label for="R1">La valeur de la résistence 'R1'</label>:
+     <input type="number" name="résistence1" id="R1" placeholder="en ohm(µ)"><br><br>
+     <li><label for="R2">La valeur de la résistence 'R2'</label>:
+     <input type="number" name="résistence2" id="R2" placeholder="en ohm(µ)"><br><br></li>
+     <li><label for="R3">La valeur de la résistence 'R3'</label>:
+     <input type="number" name="résistence3" id="R3" placeholder="en ohm(µ)"><br><br></li>
+     <li><label for="R4">La valeur de la résistence 'R4'</label>:
+     <input type="number" name="résistence4" id="R4" placeholder="en ohm(µ)"><br></li>
+    </ul>
+     <div>
+        <button onclick="clearDisplay()">Clear</button>
+        <button onclick="calculate()">CALCULER</button></div></div>
+     <h3 id="result" class="result"></h3>
+     <h3 id="result1"></h3></fieldset>
+     <script src="../js/TP2.JS"></script>
+
+
+</body>
+</html>
